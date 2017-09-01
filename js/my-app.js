@@ -43,7 +43,8 @@ $$(document).on('pageInit', function (e) {
           method: 'GET',
           data: 'to='+to+'&body='+message+'&subject='+subject,
           headers: {
-                    'Access-Control-Allow-Origin': '*'
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Credentials':true
                 },
           success: function(res) {
             $('#error').html(res);
