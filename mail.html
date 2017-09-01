@@ -19,7 +19,6 @@
     <div data-page="about" class="page">
         <div class="page-content">
             <div class="content-block">
-                <p>Here is the Mail Page</p>
 
                 <div class="list-block">
                   <ul>
@@ -28,7 +27,7 @@
                       <div class="item-content">
                         <div class="item-inner">
                           <div class="item-input">
-                              <input type="text" placeholder="Subject" name="name">
+                              <input v-model="subject" id="subject" type="text" placeholder="Subject" name="name">
                           </div>
                         </div>
                       </div>
@@ -40,13 +39,15 @@
                       <div class="item-content">
                         <div class="item-inner">
                           <div class="item-input">
-                            <textarea placeholder="Your Message" name="body" rows="8" cols="80"></textarea>                          </div>
+                            <textarea id="message" placeholder="Your Message" name="body" rows="8" cols="80"></textarea>                          </div>
                         </div>
                       </div>
                     </li>
 
 
-                    <p><a @click="sendMail()" class="button">Send Message</a></p>
+                    <p><a id="subsub" @click="sendMail" class="button">Send Message</a></p>
+
+                    <blockquote id="error"></blockquote>
 
                   </ul>
                 </div>
