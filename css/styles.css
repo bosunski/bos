@@ -1,0 +1,41 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+.statusbar-overlay {
+    background: #000000;
+}
+
+.center-span {
+  text-align: center;
+}
+
+.list-block .item-media {
+  min-width: 0px;
+}
+
+.card-footer, .card-header {
+  position: initial;
+}
+
+.pic-icon {
+  margin-right: 30px;
+  font-size: x-large ;
+  font: normal normal normal 25px/1 FontAwesome;
+}
+
+.pic-icon:first {
+  margin-left: auto;
+}
+
+.pic-icon-last {
+  margin-right: 5px;
+}

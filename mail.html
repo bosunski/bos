@@ -1,0 +1,56 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center sliding">Send Mail to Bosunski</div>
+        <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="about" class="page">
+        <div class="page-content">
+            <div class="content-block">
+                <p>Here is the Mail Page</p>
+
+                <div class="list-block">
+                  <ul>
+
+                    <li>
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-input">
+                              <input type="text" placeholder="Subject" name="name">
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <br/>
+
+
+                    <li>
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="item-input">
+                            <textarea placeholder="Your Message" name="body" rows="8" cols="80"></textarea>                          </div>
+                        </div>
+                      </div>
+                    </li>
+
+
+                    <p><a @click="sendMail()" class="button">Send Message</a></p>
+
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
